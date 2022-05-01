@@ -108,6 +108,32 @@
     </servlet-mapping>
 	
 	
-	
+	    <servlet>
+    	<servlet-name>petInsert</servlet-name>
+    	<servlet-class>com.pet.petInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>petInsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+    	<servlet-name>updatePet</servlet-name>
+    	<servlet-class>com.pet.updatePetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>updatePet</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+    	<servlet-name>petSearchView</servlet-name>
+    	<servlet-class>com.pet.petSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>petSearchView</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    
      
  </web-app>
