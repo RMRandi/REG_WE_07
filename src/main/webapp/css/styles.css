@@ -1,0 +1,103 @@
+
+.center{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 200px;
+	height:200px;
+}
+.center1{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 800px;
+	height:400px;
+}
+h1{
+	font-family:Lucida Console;
+	font-size:20px;
+	text-align:20px;
+	color:red;
+}
+	
+h2{
+	font-family:Lucida Console;
+	font-size:20px;
+	text-align:center;
+	color:rgb(126, 228, 58);
+}		
+hr{
+	border-top: 1px solid rgb(98, 37, 148);
+}
+ul.one {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #0000ff;
+	
+}
+
+li {
+	float: left;
+	
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size:21px;
+	font-family:italic;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: rgb(116, 96, 124);
+}
+table.productdata{
+	background-color:rgb(221, 216, 216);
+	border:10px  groove darkblue;
+	width:1330px;
+	color:rgb(147, 189, 92);
+}
+
+.vbody {
+  background-image: url('../images/homepetsmem.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.ibody {
+  background-image: url('../images/Home1.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.ubody{
+  background-image: url('../images/Pets.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #cce6ff;
+}
+
+.ubutton{
+	margin-left: auto;
+  	margin-right: auto;
+}
