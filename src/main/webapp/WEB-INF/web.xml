@@ -78,5 +78,36 @@
     	<servlet-name>searchview</servlet-name>
     	<url-pattern>/search</url-pattern>
     </servlet-mapping>
+	
+	
+	 <servlet>
+    	<servlet-name>stockinsert</servlet-name>
+    	<servlet-class>com.stock.stockinsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>stockinsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+    	<servlet-name>updatestock</servlet-name>
+    	<servlet-class>com.stock.stockupdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>updatestock</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+    	<servlet-name>searchview</servlet-name>
+    	<servlet-class>com.stock.stockupdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>searchview</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+	
+	
+	
      
  </web-app>
