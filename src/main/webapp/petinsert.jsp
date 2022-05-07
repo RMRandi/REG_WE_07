@@ -24,7 +24,7 @@
 			<li><a href="view.jsp">Members</a></li>
 			<li><a href="viewPet.jsp">Pets</a></li>
 			<li><a href="VictoryViewAll">Victory Log</a></li>
-			<li><a href="stockview">Stocks </a></li>
+			<li><a href="stockview.jsp">Stocks </a></li>
 			<li><a href="About.html">About Us</a></li>
 			
 		</ul>
@@ -144,7 +144,7 @@ a {
 <meta charset="ISO-8859-1">
 <title>Pets Information</title>
 </head>
-<body>
+<body style="background-image: url(images/pet.jpg);background-repeat: no-repeat;">
 
 
 <h6 style = "text-align:center;font-size:30px;font-style:italic;color:red">Pet Registration</h6>
@@ -154,7 +154,7 @@ a {
 <a href="viewPet.jsp"><button class="button button2">View Records</button></a>	
 	
 	
-	<form action="insert" method="post">
+	<form action="petinsert" method="post">
 		
 	
   <div class="form" >

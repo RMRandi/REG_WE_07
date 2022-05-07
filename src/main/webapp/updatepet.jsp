@@ -47,11 +47,11 @@ try{
 		<ul class="one" position=fixed;>
 		<li><lable style="font-size:40px;  text-align: center;">Happy Tails</lable></li>
 			
-			<li><a href="Home.html">Home</a></li>
+	<li><a href="Home.html">Home</a></li>
 			<li><a href="view.jsp">Members</a></li>
 			<li><a href="viewPet.jsp">Pets</a></li>
 			<li><a href="VictoryViewAll">Victory Log</a></li>
-			<li><a href="stockview">Stocks </a></li>
+			<li><a href="stockview.jsp">Stocks </a></li>
 			<li><a href="About.html">About Us</a></li>
 		</ul>
 		
@@ -131,11 +131,11 @@ a {
  <hr>
 	
 
-<body>
-	<div class="container">
+<body style="background-image: url(images/pet.jpg);background-repeat: no-repeat;">
+	<div >
 	<h1>Update Pets</h1>
 	
-  	<form action="update" method="post">
+  	<form action="petupdate" method="post">
   	<input type="hidden" name="ptid" value="<%=resultSet.getString("id") %>">
       	<label for="pid">Patient ID</label>
       		<input type="text" name="id"  value="<%=resultSet.getString("id") %>" readonly ><br>
@@ -158,8 +158,8 @@ a {
       	
       	<br>		
       	<label for="gender"><b>Gender</b></label> <br>
-      		<input type="radio" id="male" name="gender" value="male" readonly  > <label for="male">Male</label>
-     		<input type="radio" id ="female" name="gender" value="female" readonly ><label for="female">Female</label>
+      		<input type="radio" id="male" name="gender" value="male"   checked> <label for="male">Male</label>
+     		<input type="radio" id ="female" name="gender" value="female" ><label for="female">Female</label>
      
      	<br>
       		

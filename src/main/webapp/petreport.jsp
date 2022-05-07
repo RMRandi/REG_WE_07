@@ -35,7 +35,7 @@ ResultSet resultSet1 = null;
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 
 <meta charset="ISO-8859-1">
-<title>Pet Report</title>
+
 <link rel = "stylesheet" href = "Styles/vehicle/deco.css">
 <link rel = "stylesheet" href = "Styles/vehicle/ieldset.css">
 <script src="JavaScriptSources/St_search.js"></script>
@@ -91,14 +91,8 @@ ResultSet resultSet1 = null;
 </style>
 
 
-
-
-
-
-
-
-
 </head>
+
 <body>
 	<!-- header -->
 	<div class="header">
@@ -115,21 +109,17 @@ ResultSet resultSet1 = null;
 	
 		
 	</center>
-	<!-- table -->
-	<br>
-	<br>
 
 <div id="list">
 
-		<center>
-			<img alt="" src="images/redcross.png" width="30%" height="30%">
-		</center>
+		<center><img src ="victoryImages/logo.jpg" width =300px height="200px" > </center>
 
-<p style="width: 50%;margin:0% 5%">Date&Time:<%=new Date().toString()%> </p>  
 <center>
 	<table>
 	
-	<h1>Pets Report</h1>
+	
+<p style="width: 50%; margin:0% 0%; align:left";>Report generated Date and Time:<%=new Date().toString()%> </p>  
+		<h1>Pets Report</h1>
 		<tr >
 		    <th><h3>ID<h3></th>
 			<th><h3>Pet Name<h3></th>
@@ -196,7 +186,7 @@ ResultSet resultSet1 = null;
 				
 				%>
 				<tr class="back">
-				    <td><h4> Monthly total patients</h4> </td>
+				    <td><h4> Total records</h4> </td>
 					<td><h4><%=resultSet1.getString("count")%></h4></td>
 					
 					 
@@ -242,7 +232,8 @@ ResultSet resultSet1 = null;
 	
 </fieldset> 
 
-<button onclick="print()" class="button2">Download  Report</button>
+<button onclick="print()" class="button2">Download  Report</button>&nbsp &nbsp
+           <a href="petreportsearch.jsp"  class="button button2">BACK</a> 
 </center>
 
 	
@@ -255,7 +246,7 @@ ResultSet resultSet1 = null;
 	  filename:     'Pets report.pdf',
 	  image:        { type: 'jpeg', quality: 0.98 },
 	  html2canvas:  { scale: 2 },
-	  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+	  jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
 	};
 	 
 	// New Promise-based usage:

@@ -64,11 +64,11 @@ ResultSet resultSet = null;
 		<ul class="one" position=center>
 		<li><lable style="font-size:40px;  text-align: center;">Happy Tails</lable></li>
 			
-			<li><a href="Home.html">Home</a></li>
+	<li><a href="Home.html">Home</a></li>
 			<li><a href="view.jsp">Members</a></li>
 			<li><a href="viewPet.jsp">Pets</a></li>
-			<li><a href="VictoryViewAll">Victory Log</a></li>
-			<li><a href="stockview">Stocks </a></li>
+			<li><a href="VictoryViewAll.jsp">Victory Log</a></li>
+			<li><a href="stockview.jsp">Stocks </a></li>
 			<li><a href="About.html">About Us</a></li>
 		</ul>
 		
@@ -76,18 +76,18 @@ ResultSet resultSet = null;
  	
  </head>
 
-<body>
+<body style="background-image: url(images/Pets.jpg);background-repeat: no-repeat;">
 <br><br>
 	
 	<h1 align="center"><font><strong>Pets Record</strong></font></h1>
 
 	<div class=search>
-		<form action="Search" name="frm" method="post">
+		<form action="petsearch" name="frm" method="post">
 		<table align="center">
 			<tr>
 			<td colspan=2 style="font-size:12pt;" align="center">
 			<td><label for="fname">Search data by Pets Name</label></td>
-			<td><input type="text" name="name" ></td>
+			<td><input type="text" name="petname" ></td>
 			<td><input  type="submit" name="submit" value="Search"></td></tr>
 		</table>
 	</form>
