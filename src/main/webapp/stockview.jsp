@@ -6,7 +6,7 @@
 <%
 String id = request.getParameter("id");
 String driverName = "com.mysql.jdbc.Driver";
-String connectionUrl = "jdbc:mysql://localhost:3306/happytaildb";
+String connectionUrl = "jdbc:mysql://localhost:3306/happytailsdb";
 String userId = "root";
 String password = "";
 
@@ -39,23 +39,26 @@ ResultSet resultSet = null;
 	
 		<ul class="one" position=fixed;>
 		
-			<li><lable style="font-size:40px;">Happy Tail</lable></li>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Members</a></li>
-			<li><a href="#">Pets</a></li>
-			<li><a href="#">Victory Logs</a></li>
-			<li><a href="stockview.jsp">Stock</a></li>
-			<li><a href="#">About Us</a></li>
+			<li><lable style="font-size:40px;">Happy Tails</lable></li>
+		<li><a href="Home.html">HOME</a></li>
+<li><a href="view.jsp">MEMBERS</a></li>
+<li><a href="viewPet.jsp">PETS</a></li>
+<li><a href="VictoryViewAll.jsp">VICTORY LOGS</a></li>
+<li><a href="stockview.jsp">STOCKS</a></li>
+<li><a href="About.html">ABOUT US</a></li>
+
 			
 		</ul>
-		
+		<style>
+			body{background-image:url('file:///C:/Users/Fujitsu/eclipse-workspace/Happy/src/main/webapp/images/downl1.jpg');
+				background-repeat:no-repeat;
+				background-size: cover;"}
+		</style>
 		
  	
  </head>
 
-<body style="background-image:url('file:///C:/Users/Fujitsu/eclipse-workspace/Happy/src/main/webapp/images/downl1.jpg');
-	background-repeat:no-repeat;
-	background-size: cover;">
+<body style="background-image: url(images/pet.jpg);background-repeat: no-repeat;">
 <br><br>
 	<div id="btn">
 		<a href="stockinsert.jsp"><button class="btnback" align="right">Add stock</button></a>
@@ -64,11 +67,11 @@ ResultSet resultSet = null;
 	<h1 align="center"><font><strong>Stock Record</strong></font></h1>
 
 	<div class=search>
-		<form action="Search" name="frm" method="post">
+		<form action="stockSearch" name="name" method="post">
 		<table align="center">
 			<tr>
 			<td colspan=2 style="font-size:12pt;" align="center">
-			<td><label for="fname">Search data by Item Name</label></td>
+			<td><label for="name">Search data by Item Name</label></td>
 			<td><input type="text" name="name" ></td>
 			<td><input  type="submit" name="submit" value="Search"></td></tr>
 		</table>
@@ -89,7 +92,7 @@ ResultSet resultSet = null;
 		<td><b>Unit Price(Rs.)</b></td>
 		<td><b>Quantity</b></td>
 		<td><b>Total Amount</b></td>
-		<td><b>Coordinator ID</b></td>
+		<td><b>Serial Number</b></td>
 		<td><b>Update</b></td>
 		<td><b>Delete</b></td>
 	</tr>
@@ -133,9 +136,17 @@ e.printStackTrace();
 
 
 <br><br>
-<a href="report"><button class="btnget">Download records</button>	
-<a href="reportsearch.jsp"><button class="btnget">Reports</button>											
 
+											
+
+
+
+<form action="stockReports.jsp " method="post"  >	
+		
+    <b >Generate report by item name :</b><input type = "text" name ="name"  placeholder = "name"   required>
+         <br><br>   
+          <input style= "background-color:blue; COLOR:WHITE" type="submit" value="Genarate" >  
+  </form>
 
 </body>
 
