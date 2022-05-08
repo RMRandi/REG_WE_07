@@ -51,5 +51,89 @@
         <servlet-name>victoryReport</servlet-name>
         <url-pattern>/VictoryReport</url-pattern>
  	 </servlet-mapping>
+	 
+	 <servlet>
+    	<servlet-name>memberinsert</servlet-name>
+    	<servlet-class>com.member.MemberInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>memberinsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+    	<servlet-name>updatemember</servlet-name>
+    	<servlet-class>com.member.UpdateMemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>updatemember</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+    	<servlet-name>searchview</servlet-name>
+    	<servlet-class>com.member.UpdateMemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>searchview</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+	
+	
+	 <servlet>
+    	<servlet-name>stockinsert</servlet-name>
+    	<servlet-class>com.stock.stockinsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>stockinsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+    	<servlet-name>updatestock</servlet-name>
+    	<servlet-class>com.stock.stockupdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>updatestock</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+    	<servlet-name>searchview</servlet-name>
+    	<servlet-class>com.stock.stockupdateservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>searchview</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+	
+	
+	    <servlet>
+    	<servlet-name>petInsert</servlet-name>
+    	<servlet-class>com.pet.petInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>petInsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+    	<servlet-name>updatePet</servlet-name>
+    	<servlet-class>com.pet.updatePetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>updatePet</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    	<servlet>
+    	<servlet-name>petSearchView</servlet-name>
+    	<servlet-class>com.pet.petSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>petSearchView</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    
      
  </web-app>
